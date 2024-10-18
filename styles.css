@@ -1,0 +1,232 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4e3c3; /* Light Beige */
+    color: #333333; /* Dark Gray */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title-section h1 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 4rem; /* Equivalent to 360pt */
+    color: #002244; /* Dark Navy */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title-section h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2.5rem; /* Equivalent to 240pt */
+    color: #6d84ed; /* Soft Blue */
+    text-transform: uppercase;
+}
+
+.qr-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+}
+
+.qr-section p {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.presenter-info {
+    margin-top: 20px;
+}
+
+.presenter-info h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem; /* Equivalent to 180pt */
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.presenter-info p {
+    font-size: 1.5rem; /* Equivalent to 160pt */
+    color: #333333;
+    font-style: italic;
+}
+
+.logos {
+    margin-top: 20px;
+}
+
+.logo {
+    width: 150px;
+    margin: 0 10px;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Section Styling */
+section {
+    background-color: #fef1d9; /* Pale Yellow */
+    padding: 20px;
+    border-left: 5px solid #6d84ed; /* Soft Blue */
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2.5rem; /* Equivalent to 240pt */
+    color: #6d84ed; /* Soft Blue */
+    margin-bottom: 15px;
+}
+
+section h4 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2rem; /* Slightly smaller for subheadings */
+    color: #6d84ed;
+    margin: 15px 0;
+}
+
+section p {
+    font-size: 1.8rem; /* Equivalent to 180pt */
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    font-size: 1.8rem;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Equations Styling */
+.equation {
+    background-color: #e3d5b6; /* Beige */
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 1.8rem;
+    font-family: 'Courier New', monospace;
+}
+
+/* Image Gallery Styling */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.poster-image {
+    width: 45%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #6d84ed; /* Soft Blue */
+    color: #ffffff; /* White */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .title-section h1 {
+        font-size: 3rem;
+    }
+
+    .title-section h2 {
+        font-size: 2rem;
+    }
+
+    .qr-code {
+        width: 150px;
+        height: 150px;
+    }
+
+    .presenter-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .presenter-info p {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h3 {
+        font-size: 2rem;
+    }
+
+    section h4 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 1.6rem;
+    }
+
+    .equation {
+        font-size: 1.6rem;
+    }
+
+    .poster-image {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+}
